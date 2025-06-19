@@ -1,0 +1,5 @@
+ami_id            = "ejemplo" 
+instance_type     = "ejemplo"
+key_name          = "ejemplo"
+security_group_id = "ejemplo"
+subnet_id         = "ejemplo"
