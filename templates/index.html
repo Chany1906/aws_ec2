@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Reportes de Stock</h1>
+    <form method="GET">
+        <label>Filtrar por Marca:</label>
+        <input type="text" name="marca">
+        <input type="submit" value="Filtrar">
+    </form>
+    <ul>
+        {% for reporte in reportes %}
+            <li><a href="/reporte/{{ reporte }}">{{ reporte }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

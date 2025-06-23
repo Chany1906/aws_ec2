@@ -1,5 +1,5 @@
 resource "aws_instance" "web_app" {
-  ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2
+  ami           = "ami-020cba7c55df1f615" # ubuntu
   instance_type = "t2.micro"
   iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
   security_groups = [aws_security_group.web_sg.name]
