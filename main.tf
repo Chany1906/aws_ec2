@@ -32,7 +32,7 @@ resource "aws_security_group" "web_sg" {
 }
 
 resource "aws_iam_role" "ec2_role" {
-  name = "rol_ec2_${random_string.suffix.result}"
+  name = "rol_ec2_${var.suffix}"
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
     Statement = [{
