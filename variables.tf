@@ -3,6 +3,6 @@ variable "output_bucket_arn" {
 }
 
 variable "suffix" {
+  description = "Sufijo para evitar duplicados"
   type        = string
-  description = "Sufijo aleatorio para recursos únicos"
 }
