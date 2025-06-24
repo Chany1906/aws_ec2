@@ -16,7 +16,7 @@ resource "aws_instance" "web_app" {
 }
 
 resource "aws_security_group" "web_sg" {
-  name = "web-sg-${random_string.suffix.result}"
+  name = "web-sg-${var.suffix}"
   ingress {
     from_port   = 80
     to_port     = 80
