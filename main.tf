@@ -56,6 +56,6 @@ resource "aws_iam_role_policy" "ec2_policy" {
 }
 
 resource "aws_iam_instance_profile" "ec2_profile" {
-  name = "perfil_ec2"
+  name = "perfil_ec2_${var.suffix}"
   role = aws_iam_role.ec2_role.name
 }
